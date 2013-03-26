@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # You can put local mirrors here if you want
-kali_mirror=http://archive.kali.org/kali
-kalisec_mirror=http://archive.kali.org/kali-security
+kali_mirror=http://http.kali.org/kali
+kalisec_mirror=http://security.kali.org/kali-security
 
 ### DO NOT EDIT THE REST OF THIS FILE ###
 
@@ -67,7 +67,8 @@ if [ -n "$enable_pu" ]; then
 fi
 
 lb config noauto \
-	--distribution "kali" \
+	--distribution "kalidasa" \
+	--parent-distribution "kali" \
 	--debian-installer-distribution "kali" \
 	--archive-areas "main contrib non-free" \
 	--bootstrap cdebootstrap \
@@ -83,10 +84,10 @@ lb config noauto \
 	--mirror-chroot-security $kalisec_mirror \
 	--mirror-binary $public_kali_mirror \
 	--mirror-binary-security $public_kalisec_mirror \
-	--iso-application "Kali Linux" \
-	--iso-publisher "Kali" \
-	--iso-volume "Kali Live" \
+	--iso-application "Kalidasa Linux" \
+	--iso-publisher "Kalidasa" \
+	--iso-volume "Kalidasa Live" \
 	--linux-packages linux-image \
-	--bootappend-live "boot=live noconfig=sudo username=root hostname=kali" \
+	--bootappend-live "boot=live noconfig=sudo username=root hostname=kalidasa" \
 	$lb_opts \
 	"$@"
