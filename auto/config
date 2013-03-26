@@ -86,7 +86,7 @@ lb config noauto \
 	--iso-application "Kali Linux" \
 	--iso-publisher "Kali" \
 	--iso-volume "Kali Live" \
-	--linux-packages linux-image \
+	--linux-packages linux-image linux-header \
 	--bootappend-live "boot=live noconfig=sudo username=root hostname=kali" \
 	$lb_opts \
 	"$@"

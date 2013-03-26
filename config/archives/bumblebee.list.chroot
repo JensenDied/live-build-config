@@ -1,0 +1,4 @@
+#Bumblebee
+deb http://suwako.nomanga.net/debian sid main contrib
+deb-src http://suwako.nomanga.net/debian sid main
+

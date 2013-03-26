@@ -1,0 +1,8 @@
+# bumblebee related packages
+nvidia-glx
+nvidia-kernel-dkms
+
+# From an external repository
+# suwako.nomanga.net
+bumblebee
+bumblebee-nvidia
