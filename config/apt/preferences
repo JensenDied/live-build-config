@@ -1,0 +1,4 @@
+Package: network-manager
+Pin: version *
+Pin-Priority: -1
+
