@@ -1,8 +1,10 @@
 ! Packages Priority standard
+acpitool
 axel
 cpuid
 gitk
 htop
+lftp
 libreoffice
 qalc
 wicd
